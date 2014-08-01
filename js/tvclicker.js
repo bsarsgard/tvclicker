@@ -23,46 +23,47 @@ cheevos: [],
 istvclick: false,
 
 // collections
+maxViewers: 313900000,
 jobs: [{
 	id: 0,
 	name: "Executive",
-	salary: 100,
+	salary: 100000,
 	viewers: 1.5,
 	cash: 1.5,
 },{
 	id: 1,
 	name: "Producer",
-	salary: 50,
-	viewers: 1,
-	cash: 1.3,
+	salary: 1000,
+	viewers: 1.1,
+	cash: 1.4,
 },{
 	id: 2,
 	name: "Director",
-	salary: 50,
-	viewers: 1.3,
-	cash: 1,
+	salary: 1000,
+	viewers: 1.4,
+	cash: 1.1,
 },{
 	id: 3,
 	name: "Editor",
-	salary: 50,
+	salary: 1000,
 	viewers: 1.2,
 	cash: 1.2,
 },{
 	id: 4,
 	name: "Manager",
-	salary: 20,
+	salary: 100,
 	viewers: 1.1,
 	cash: 1.1,
 },{
 	id: 5,
 	name: "Sales",
-	salary: 20,
+	salary: 100,
 	viewers: 1,
 	cash: 1.2,
 },{
 	id: 6,
 	name: "Cameraman",
-	salary: 20,
+	salary: 100,
 	viewers: 1.2,
 	cash: 1,
 },{
@@ -82,29 +83,29 @@ dayParts: [{
 	id: 0,
 	name: "Morning",
 	abbr: "mor",
-	viewers: 2,
-	cash: 2,
+	viewers: 1.3,
+	cash: 1,
 	night: false,
 },{
 	id: 1,
         name: "Afternoon",
 	abbr: "aft",
-	viewers: 3,
-	cash: 1,
+	viewers: 1.2,
+	cash: 1.2,
 	night: false,
 },{
 	id: 2,
         name: "Evening",
 	abbr: "eve",
-	viewers: 3,
-	cash: 3,
+	viewers: 2,
+	cash: 2,
 	night: true,
 },{
 	id: 3,
         name: "Late Night",
 	abbr: "lat",
 	viewers: 1,
-	cash: 1,
+	cash: 1.1,
 	night: true,
 }],
 days: [{
@@ -135,8 +136,8 @@ days: [{
 	id: 4,
         name: "Friday",
 	abbr: "fri",
-	viewers: 1,
-	cash: 1,
+	viewers: 2,
+	cash: 2,
 },{
 	id: 5,
         name: "Saturday",
@@ -153,7 +154,6 @@ days: [{
 shows: [{
 	id: 0,
 	name: "Static",
-	cssClass: "",
 	cost: 0,
 	cash: 0,
 	viewers: 0,
@@ -164,10 +164,9 @@ shows: [{
 }, {
 	id: 1,
 	name: "Infomercials",
-	cssClass: "btn-success",
 	cost: 0,
 	cash: 2,
-	viewers: -2,
+	viewers: -1,
 	episodes: [{
 		name: 'The Burger Wizard',
 		gif: 'img/tvclicker/infomercialburger.gif',
@@ -181,7 +180,7 @@ shows: [{
 		name: 'The Dummy Drill',
 		gif: 'img/tvclicker/infomercial-drill.gif',
 	},{
-		name: 'The Flabmaster',
+		name: 'The Bingo Wingo',
 		gif: 'img/tvclicker/infomercial-flabby.gif',
 	},{
 		name: 'The Re-Mulletizer',
@@ -202,7 +201,7 @@ shows: [{
 		name: 'Milk is hard',
 		gif: 'img/tvclicker/infomercial-milk.gif',
 	},{
-		name: "What the I don't even",
+		name: "What the ... I don't even",
 		gif: 'img/tvclicker/infomercial-mouth-guard.gif',
 	},{
 		name: 'Pillow wants you to kill',
@@ -225,15 +224,55 @@ shows: [{
 	}],
 }, {
 	id: 2,
-	name: "Cartoons",
-	cssClass: "btn-danger",
-	cost: 2,
+	name: "Televangelism",
+	cost: 0,
 	cash: 0,
-	viewers: 2,
+	viewers: 1,
 	episodes: [{
-		name: 'The Samsons',
-		gif: 'img/tvclicker/cartoon-bart.gif',
+		name: "Sing for Jesus!",
+		gif: "img/tvclicker/televangelism-choir.gif",
 	},{
+		name: "Satan put a spider on me, oh god kill it kill it!",
+		gif: "img/tvclicker/televangelism-coat.gif",
+	},{
+		name: "Dancing the Gay Away",
+		gif: "img/tvclicker/televangelism-dance.gif",
+	},{
+		name: "The #1 Club",
+		gif: "img/tvclicker/televangelism-finger.gif",
+	},{
+		name: "Drunk on Jesus!",
+		gif: "img/tvclicker/televangelism-seizure.gif",
+	},{
+		name: "Uncle Nutsy is the ONE TRUE GOD!",
+		gif: "img/tvclicker/televangelism-unclenutsy.gif",
+	}],
+}, {
+	id: 3,
+	name: "Game Shows",
+	cost: 10,
+	cash: 3,
+	viewers: 1,
+	episodes: [{
+		name: "Double Trouble",
+		gif: "img/tvclicker/gameshow-doubledare.gif",
+	},{
+		name: "Nick of Time",
+		gif: "img/tvclicker/gameshow-fistbump.gif",
+	},{
+		name: "Turd Furgison",
+		gif: "img/tvclicker/gameshow-jeopardy.gif",
+	},{
+		name: "Game shows for people who didn't know they were on a game show!",
+		gif: "img/tvclicker/gameshow-winner.gif",
+	}],
+}, {
+	id: 4,
+	name: "Cartoons",
+	cost: 10,
+	cash: 1,
+	viewers: 3,
+	episodes: [{
 		name: "Butt Heads",
 		gif: 'img/tvclicker/cartoon-beavisandbutthead.gif',
 	},{
@@ -259,15 +298,14 @@ shows: [{
 		gif: 'img/tvclicker/cartoon-xmen.gif',
 	}],
 }, {
-	id: 3,
-	name: "Drama",
-	cssClass: "btn-warning",
-	cost: 2,
-	cash: 1,
-	viewers: 1,
+	id: 5,
+	name: "Sitcoms",
+	cost: 100,
+	cash: 2,
+	viewers: 2,
 	episodes: [{
-		name: "Beaver Hills 01209",
-		gif: "img/tvclicker/drama-90210.gif",
+		name: 'The Samsons',
+		gif: 'img/tvclicker/cartoon-bart.gif',
 	},{
 		name: "Boy's Meat World",
 		gif: "img/tvclicker/drama-boy-meets-world.gif"
@@ -283,12 +321,28 @@ shows: [{
 	},{
 		name: "Home Employment",
 		gif: "img/tvclicker/drama-home-improvement.gif"
-	},{
-		name: "Saved by the Bulls",
-		gif: "img/tvclicker/drama-saved-by-the-bell.gif"
+	}],
+}, {
+	id: 6,
+	name: "Drama",
+	cost: 5000,
+	cash: 3,
+	viewers: 3,
+	episodes: [{
+		name: "Beaver Hills 01209",
+		gif: "img/tvclicker/drama-90210.gif",
 	},{
 		name: "Next Files",
 		gif: "img/tvclicker/drama-x-files.gif"
+	},{
+		name: "Mel Rose's Face",
+		gif: "img/tvclicker/drama-melrose-place.gif"
+	},{
+		name: "UHF Rambo",
+		gif: "img/tvclicker/drama-rambo.gif"
+	},{
+		name: "Saved by the Balls",
+		gif: "img/tvclicker/drama-saved-by-the-bell.gif"
 	}],
 }],
 awards: [{
@@ -386,41 +440,149 @@ awards: [{
 	id: 7,
 	name: "You're Fired",
 	desc: "Fire an employee",
-	staff: 0,
+	count: 0,
 	check: function() {
-		if (this.staff > Game.staff.length) {
+		if (this.count > Game.staff.length) {
 			return true;
 		}
-		this.staff = Game.staff.length;
+		this.count = Game.staff.length;
 		return false;
 	},
 },{
 	id: 8,
-	name: "",
-	desc: "",
+	name: "Danger Zone",
+	desc: "Go into debt (negative cash reserves)",
 	check: function() {
-		return false;
+		return Game.cash < 0;
 	},
 },{
 	id: 9,
-	name: "",
-	desc: "",
+	name: "One ... MILLION Dollars",
+	desc: "Have a $1 million cash balance",
 	check: function() {
-		return false;
+		return Game.cash >= 1000000;
 	},
 },{
 	id: 10,
-	name: "",
-	desc: "",
+	name: "We're number 1!",
+	desc: "Reach rank #1",
 	check: function() {
-		return false;
+		return Game.rank == 1;
 	},
 },{
 	id: 11,
-	name: "",
-	desc: "",
+	name: "CEO",
+	desc: "Hire an executive",
 	check: function() {
+		var iStaff = Game.staff.length;
+		while (iStaff--) {
+			if (Game.jobs[Game.staff[iStaff].job].name == "Executive") {
+				return true;
+			}
+		}
 		return false;
+	},
+},{
+	id: 12,
+	name: "UHF",
+	desc: "Make it out of Public Access",
+	check: function() {
+		return Game.rank <= 150;
+	}
+},{
+	id: 13,
+	name: "Network TV",
+	desc: "Make it onto the national networks",
+	check: function() {
+		return Game.rank <= 100;
+	}
+},{
+	id: 14,
+	name: "Cable Time",
+	desc: "Make it onto the cable networks",
+	check: function() {
+		return Game.rank <= 50;
+	}
+},{
+	id: 15,
+	name: "HBOwned",
+	desc: "Make it onto premium cable",
+	check: function() {
+		return Game.rank <= 10;
+	}
+},{
+	id: 16,
+	name: "Golden Parachute",
+	desc: "Fire an executive",
+	count: 0,
+	check: function() {
+		var count = 0;
+		var iStaff = Game.staff.length;
+		while (iStaff--) {
+			if (Game.jobs[Game.staff[iStaff].job].name == "Executive") {
+				count++;
+			}
+		}
+		if (this.count > count) {
+			return true;
+		}
+		this.count = count;
+		return false;
+	},
+},{
+	id: 17,
+	name: "Hiring Spree",
+	desc: "Hire all available staff",
+	check: function() {
+		return Game.hires.length == 0;
+	},
+},{
+	id: 18,
+	name: "Very Funny",
+	desc: "Schedule nothing but Sitcoms",
+	check: function() {
+		var iDayPart = Game.dayParts.length;
+		while (iDayPart--) {
+			var iDay = Game.days.length;
+			while (iDay--) {
+				if (Game.shows[Game.schedule[iDayPart][iDay]].name != 'Sitcoms') {
+					return false;
+				}
+			}
+		}
+		return true;
+	},
+},{
+	id: 19,
+	name: "The God Channel",
+	desc: "Schedule nothing but Televangelism",
+	check: function() {
+		var iDayPart = Game.dayParts.length;
+		while (iDayPart--) {
+			var iDay = Game.days.length;
+			while (iDay--) {
+				if (Game.shows[Game.schedule[iDayPart][iDay]].name != 'Televangelism') {
+					return false;
+				}
+			}
+		}
+		return true;
+	},
+},{
+	id: 20,
+	name: "Gaming the System",
+	desc: "Schedule nothing but Game Shows",
+	check: function() {
+		var iDayPart = Game.dayParts.length;
+		while (iDayPart--) {
+			var iDay = Game.days.length;
+			while (iDay--) {
+				if (Game.shows[Game.schedule[iDayPart][iDay]].name != 'Game Shows') {
+					return false;
+				}
+			}
+		}
+		return true;
 	},
 }],
 
@@ -472,8 +634,16 @@ reset: function() {
 	];
 	Game.staff = [];
 	Game.hires = [];
-	Game.cheevos = [];
+	//Game.cheevos = [];
 	Game.refreshHires();
+
+	// clear cheevos counts
+	var iAwards = this.awards.length;
+	while (iAwards--) {
+		if (this.awards[iAwards].count !== undefined) {
+			this.awards[iAwards].count = 0;
+		}
+	}
 	Game.save();
 },
 
@@ -489,11 +659,15 @@ setSchedule: function(evt) {
 },
 doHire: function(evt) {
 	evt.preventDefault();
-	Game.staff.push(Game.hires[evt.data.hire]);
+	var hire = Game.hires[evt.data.hire];
+	var salary = (Game.jobs[hire.job].salary * hire.salary);
+	Game.cash -= salary;
+	Game.staff.push(hire);
 	Game.hires.splice(evt.data.hire, 1);
 	Game.updateHires();
 	Game.updateStaff();
 	Game.updateBudget();
+	Game.updateStats();
 },
 doDismiss: function(evt) {
 	evt.preventDefault();
@@ -509,19 +683,80 @@ doFire: function(evt) {
 dismissAwardNotification: function(evt) {
 	$("#award-notification-" + evt.data.id).remove();
 },
+getRatings: function(iDayPart, iDay) {
+	var show = Game.shows[Game.schedule[iDayPart][iDay]];
+	var day = Game.days[iDay];
+	var dayPart = Game.dayParts[iDayPart];
+	// get new viewers
+	var viewers = (show.viewers * day.viewers * dayPart.viewers);
+	// generate cash
+	var cash = (show.cash * day.cash * dayPart.cash);
+	// build jobmults table to penalize job redundancy
+	var jobMults = [];
+	var iStaff = this.staff.length;
+	while (iStaff--) {
+		if (jobMults[this.staff[iStaff].job] === undefined) {
+			jobMults[this.staff[iStaff].job] = 1;
+		} else {
+			jobMults[this.staff[iStaff].job] = jobMults[this.staff[iStaff].job] / 1.2;
+		}
+	}
+	iStaff = this.staff.length;
+	while (iStaff--) {
+		var job = this.jobs[this.staff[iStaff].job];
+		var skill = (1 + this.staff[iStaff].skill / 10) * jobMults[job.id];
+		cash *= skill * job.cash;
+		viewers *= skill * job.viewers;
+	}
+	var viewership = 1 + (Game.viewers / 1000);
+	cash *= viewership;
+	var cost = show.cost * viewership;
+	return {
+		cash: Math.round(cash),
+		viewers: Math.round(viewers),
+		cost: Math.round(cost),
+	}
+},
+doRatings: function() {
+	var ratings = Game.getRatings(Game.dayPart, Game.day);
+	Game.viewers += Math.floor(ratings.viewers);
+	Game.cash += Math.floor(ratings.cash);
+
+	// subtract costs
+	Game.cash -= ratings.cost;
+
+	if (Game.viewers < 0) {
+		Game.viewers = 0;
+	} else if (Game.viewers > Game.maxViewers) {
+		Game.viewers = Game.maxViewers;
+	}
+
+	// calculate rank
+	if (Game.viewers == 0) {
+		Game.rank = 999;
+	} else {
+		var rank = 1;
+		var rankViewers = Game.maxViewers;
+		while (Game.viewers < rankViewers) {
+			rank++;
+			rankViewers = rankViewers / 1.1;
+		}
+		Game.rank = rank;
+	}
+},
 
 // display
 refreshHires: function() {
-	this.hires = [];
-	var iHire = 3;
-	while (iHire--) {
-		this.hires.push({
-			name: getrandomname(),
-			job: Math.floor(Math.random() * this.jobs.length),
-			salary: Math.floor(Math.random() * 10) + 1,
-			skill: Math.floor(Math.random() * 10) + 1,
-		});
+	//this.hires = [];
+	if (this.hires.length == 3) {
+		this.hires.splice(0, 1);
 	}
+	this.hires.push({
+		name: getrandomname(),
+		job: Math.floor(Math.random() * this.jobs.length),
+		salary: Math.floor(Math.random() * 10) + 1,
+		skill: Math.floor(Math.random() * 10) + 1,
+	});
 },
 updateStaff: function() {
 	var staffs = "";
@@ -543,8 +778,10 @@ updateStaff: function() {
 		staffs += '<tr>' +
 			'<td>' + staff.name + '</td>' +
 			'<td>' + this.jobs[staff.job].name + '</td>' +
-			'<td>' + skill + '</td>' + '<td>$' +
-			(this.jobs[staff.job].salary * staff.salary) + '</td>' +
+			'<td>' + skill + '</td>' + '<td><span ' +
+			'class="label label-important">$' +
+			(this.jobs[staff.job].salary * staff.salary).toLocaleString("en") + 
+			'</span></td>' +
 			'<td><a class="btn btn-danger" href="#" id="staff-' +
 			iStaff + '-fire">Fire</a></td>' +
 			'</tr>';
@@ -574,15 +811,21 @@ updateHires: function() {
 		} else {
 			skill = "Terrible";
 		}
+		var salary = (this.jobs[hire.job].salary * hire.salary);
 		hires += '<div class="alert alert-info">' +
 			'<strong>' + hire.name + '</strong> (' +
 			this.jobs[hire.job].name + ', ' + skill + '), $' +
-			(this.jobs[hire.job].salary * hire.salary) +
-			'<br/><a class="btn btn-success" href="#" id="hire-' +
-			+ iHire + '-hire">Hire</a>' +
-			'<a class="btn btn-danger" href="#" id="hire-' +
+			salary.toLocaleString("en") + '<br/>';
+		if (this.cash >= salary) {
+			hires += '<a class="btn btn-success"' +
+				'href="#" id="hire-' +
+				+ iHire + '-hire">Hire</a>';
+		}
+		/*
+		hires += '<a class="btn btn-danger" href="#" id="hire-' +
 			+ iHire + '-dismiss">Dismiss</a>' +
-			'</div>';
+		*/
+		hires += '</div>';
 	}
 	$(".hires").html(hires);
 	iHire = this.hires.length;
@@ -598,8 +841,23 @@ updateHires: function() {
 updateStats: function() {
 	$(".stat-name").text(this.name);
 	$(".stat-rank").text("#" + this.rank);
-	$(".stat-viewers").text(this.viewers);
-	$(".stat-cash").text("$" + this.cash);
+	if (this.viewers == this.maxViewers) {
+		$(".stat-viewers").text("All of them");
+	} else {
+		$(".stat-viewers").text(this.viewers.toLocaleString("en"));
+	}
+	$(".stat-cash").text("$" + this.cash.toLocaleString("en"));
+	if (Game.rank <= 10) {
+		$(".stat-network").text("Premium Cable");
+	} else if (Game.rank <= 50) {
+		$(".stat-network").text("Basic Cable");
+	} else if (Game.rank <= 100) {
+		$(".stat-network").text("National Network");
+	} else if (Game.rank <= 150) {
+		$(".stat-network").text("Local Network");
+	} else {
+		$(".stat-network").text("Public Access");
+	}
 },
 updateShow: function() {
 	$(".stat-day").text(this.days[this.day].name);
@@ -633,6 +891,7 @@ updateBudget: function() {
 		var dayPart = this.dayParts[iDayPart];
 		var iDay = this.days.length;
 		while (iDay--) {
+			/*
 			var day = this.days[iDay];
 			var show = this.shows[this.schedule[iDayPart][iDay]];
 			var view = (
@@ -646,29 +905,42 @@ updateBudget: function() {
 			viewers += Math.floor(view);
 			shows += show.cost;
 			revenue += Math.floor(cash);
+			*/
+			var ratings = this.getRatings(iDayPart, iDay);
+			viewers += ratings.viewers;
+			revenue += ratings.cash;
+			shows += ratings.cost;
 		}
 	}
 	var iStaff = this.staff.length;
 	while (iStaff--) {
-		staff += this.staff[iStaff].salary * this.jobs[this.staff[iStaff].job].salary;
+		staff += (this.staff[iStaff].salary * this.jobs[this.staff[iStaff].job].salary);
 	}
-	$(".budget-viewers").text(viewers);
-	$(".budget-shows").text("$-" + shows);
-	$(".budget-staff").text("$-" + staff);
-	$(".budget-revenue").text("$" + revenue);
-	$(".budget-total").text("$" + (0 - shows - staff + revenue));
+	$(".budget-viewers").text(viewers.toLocaleString("en"));
+	$(".budget-shows").text("$-" + shows.toLocaleString("en"));
+	$(".budget-staff").text("$-" + staff.toLocaleString("en"));
+	$(".budget-revenue").text("$" + revenue.toLocaleString("en"));
+	$(".budget-total").text("$" + (0 - shows - staff + revenue).toLocaleString("en"));
 },
 updateSchedule: function() {
 	var iDayPart = this.dayParts.length;
 	while (iDayPart--) {
 		var iDay = this.days.length;
 		while (iDay--) {
+			var ratings = this.getRatings(iDayPart, iDay);
+			var score = ratings.cash + ratings.viewers - ratings.cost;
+			var cssClass = '';
+			if (score > 0) {
+				cssClass = 'btn-success';
+			} else if (score < 0) {
+				cssClass = 'btn-danger';
+			}
 			var sch = "sch-" + this.days[iDay].abbr + "-" +
 				this.dayParts[iDayPart].abbr;
 			
 			var show = this.shows[this.schedule[iDayPart][iDay]];
 			var html = '<div class="btn-group">' +
-				'<a class="btn ' + show.cssClass +
+				'<a class="btn ' + cssClass +
 				'" data-toggle="dropdown" ' +
 				'href="#">' + show.name + '</a>' +
 				'<a class="btn dropdown-toggle" ' +
@@ -677,16 +949,23 @@ updateSchedule: function() {
 				'<ul class="dropdown-menu">'
 			var iShow = this.shows.length;
 			while (iShow--) {
-				html += '<li><a href="#" id="' +
-					sch + '-' + iShow + '">' +
-					this.shows[iShow].name + '</a></li>';
-				$("#" + sch + "-" + iShow).click({
-					day: iDay,
-					dayPart: iDayPart,
-					show: iShow,
-				}, Game.setSchedule);
+				if (this.cash >= this.shows[iShow].cost ||
+						this.shows[iShow].cost == 0) {
+					html += '<li><a href="#" id="' +
+						sch + '-' + iShow + '">' +
+						this.shows[iShow].name + '</a></li>';
+					$("#" + sch + "-" + iShow).click({
+						day: iDay,
+						dayPart: iDayPart,
+						show: iShow,
+					}, Game.setSchedule);
+				}
 			}
-			html += '</ul>';
+			html += '</ul></div>';
+			html += '<div><span class="label label-success">$' + ratings.cash.toLocaleString("en") + '</span>';
+			html += '<span class="label label-important">$' + ratings.cost.toLocaleString("en") + '</span>';
+			html += '<span class="label">' + ratings.viewers.toLocaleString("en") + '</span></div>';
+			//html += '<div>$' + (ratings.cash - ratings.cost) + ', ' + ratings.viewers + 'v</div>';
 			$("#" + sch).html(html);
 
 			iShow = this.shows.length;
@@ -719,6 +998,14 @@ updateCheevos: function() {
 			this.awards[this.cheevos[iCheevos]].desc +
 			'</div>';
 	}
+	var iAwards = this.awards.length;
+	while (iAwards--) {
+		if (this.cheevos.indexOf(iAwards) == -1) {
+			awards += '<div class="alert alert-info">' +
+				this.awards[iAwards].name +
+				'</div>';
+		}
+	}
 	$(".awards").html(awards);
 },
 
@@ -741,47 +1028,29 @@ tick: function() {
 			// advance day
 			Game.dayPart = 0;
 			Game.refreshHires();
-			Game.updateHires();
 			if (++Game.day >= Game.days.length) {
 				// advance week
 				Game.day = 0;
 				// pay salaries
 				var iStaff = this.staff.length;
 				while (iStaff--) {
-					Game.cash -= this.staff[iStaff].salary * this.jobs[this.staff[iStaff].job].salary;
+					Game.cash -= (this.staff[iStaff].salary * this.jobs[this.staff[iStaff].job].salary);
 				}
 			}
+			Game.updateBudget();
+			Game.updateSchedule();
 		}
 
-		var show = Game.shows[Game.schedule[Game.dayPart][Game.day]];
-		var day = Game.days[Game.day];
-		var dayPart = Game.dayParts[Game.dayPart];
-		// get new viewers
-		var viewers = (show.viewers * day.viewers * dayPart.viewers);
-		// generate cash
-		var cash = (show.cash * day.cash * dayPart.cash);
-		var iStaff = this.staff.length;
-		while (iStaff--) {
-			cash *= (1 + this.staff[iStaff].skill / 10) * this.jobs[this.staff[iStaff].job].cash;
-			viewers *= (1 + this.staff[iStaff].skill / 10) * this.jobs[this.staff[iStaff].job].viewers;
-		}
-		Game.viewers += Math.floor(viewers);
-		Game.cash += Math.floor(cash);
-
-		// subtract costs
-		Game.cash -= show.cost;
-
-		if (Game.viewers < 0) {
-			Game.viewers = 0;
-		}
-		if (Game.cash < 0) {
-			Game.cash = 0;
-		}
+		// process show ratings
+		Game.doRatings();
 
 		// save to cookie
 		Game.save();
+
+		// update screen
 		Game.updateStats();
 		Game.updateShow();
+		Game.updateHires();
 	}
 	// check cheevos
 	var iAwards = Game.awards.length;
@@ -840,6 +1109,14 @@ $(function() {
 			Game.updateStaff();
 		}
 	});
+	// rename
+	$(".stat-name").click(function(evt) {
+		var name = prompt("Rename Channel?", Game.name);
+		if (name != '' && name !== null) {
+			Game.name = name;
+			Game.updateStats();
+		}
+	});
 	// speed controls
 	$(".button-speed-pause").click(function(evt) {
 		Game.speed = 0;
@@ -868,6 +1145,23 @@ $(function() {
 		$(".button-speed-slow").removeClass("btn-primary").addClass("btn-default");
 		$(".button-speed-normal").removeClass("btn-primary").addClass("btn-default");
 		$(".button-speed-fast").removeClass("btn-default").addClass("btn-primary");
+	});
+	// staff sorting
+	$(".staff-head-name").click(function(evt) {
+		Game.staff.sort(function(a,b) { return b.name.localeCompare(a.name); });
+		Game.updateStaff();
+	});
+	$(".staff-head-job").click(function(evt) {
+		Game.staff.sort(function(a,b) { return Game.jobs[b.job].name.localeCompare(Game.jobs[a.job].name); });
+		Game.updateStaff();
+	});
+	$(".staff-head-skill").click(function(evt) {
+		Game.staff.sort(function(a,b) { return a.skill - b.skill; });
+		Game.updateStaff();
+	});
+	$(".staff-head-salary").click(function(evt) {
+		Game.staff.sort(function(a,b) { return (Game.jobs[a.job].salary * a.salary) - (Game.jobs[b.job].salary * b.salary); });
+		Game.updateStaff();
 	});
 
 	// initiate game loop

@@ -57,8 +57,12 @@
       <h1>TV Tycoon</h1>
       <p class="lead">Click your way to fame and fortune.</p>
     </div>
+    <div class="span6">
+  <blockquote class="pull-right">
+	  <p>This awful game is dedicated to my mom, my aunt, and everyone else who was lost while we created. Our games may be awful but their lives were good. <a href="https://donate.cancer.org/index">Please help fight cancer</a>.</p>
+  </blockquote>
+    </div>
   </div>
-  <marquee>INSTRUCTIONS: Click on the TV to get viewers for your shows!</marquee>
   <div class="subnav">
     <ul class="nav nav-pills">
       <li><a href="#broadcast">Broadcast</a></li>
@@ -77,6 +81,9 @@
   <div class="page-header">
     <h1>Broadcast</h1>
   </div>
+  <blockquote>
+  <p>Quick Tip: Click the picture of the TV below to attract viewers to your shows. Don't forget to head over to the Schedule to give them something to watch!</p>
+  </blockquote>
   <div class="row">
   <div class="span12 award-notification">
   </div>
@@ -92,7 +99,7 @@
   </div>
   <div class="span7">
   <div class="stats">
-  <h3>Network: Public Access</h3>
+	  <h3>Network: <span class='stat-network'>Public Access</span></h3>
   <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
@@ -146,27 +153,30 @@
 ================================================== -->
 <section id="budget" style="padding-top: 0">
   <div class="page-header">
-    <h1>Budget</h1>
+    <h1>Budget (Weekly)</h1>
   </div>
+  <blockquote>
+	  <p>Quick Tip: Viewership represents new viewers watching your station; keep it positive! Net Income represents your Gross Revenue, minus Show and Staffing costs.</p>
+  </blockquote>
   <div class="row">
   <div class="span12">
   <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
         <th>Viewership</th>
-        <th>Programming</th>
-        <th>Staff</th>
-	<th>Revenue</th>
-	<th>Total</th>
+	<th>Gross Revenue</th>
+        <th>Show Costs</th>
+        <th>Staff Costs</th>
+	<th>Total Net Income</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="budget-viewers">0</td>
-        <td class="budget-shows">$0</td>
-        <td class="budget-staff">$0</td>
-        <td class="budget-revenue">$0</td>
-        <td class="budget-total">$0</td>
+	<td><span class="label budget-viewers">0</td>
+	<td><span class="label label-success budget-revenue">$0</td>
+	<td><span class="label label-important budget-shows">$0</td>
+	<td><span class="label label-important budget-staff">$0</td>
+	<td><span class="label label-warning budget-total">$0</td>
       </tr>
     </tbody>
   </table>
@@ -180,6 +190,9 @@
   <div class="page-header">
     <h1>Schedule</h1>
   </div>
+  <blockquote>
+	  <p>Quick Tip: Experiment with placing shows in different day parts; some are better suited for certain shows. The tags beneath each show represent Revenue, Cost, and Viewers, which correspond to the matching Weekly Budget items.</p>
+  </blockquote>
   <div class="row">
   <div class="span12">
     <h3>Weekdays</h3>
@@ -277,16 +290,19 @@
   <div class="page-header">
     <h1>Staff</h1>
   </div>
+  <blockquote>
+	  <p>Quick Tip: New hires are available daily. Consider staff carefully, as skill level and salary can vary greatly. Be sure to staff a variety of positions, as efficiency drops the more people working the same job.</p>
+  </blockquote>
   <div class="row">
   <div class="span7">
   <h3>Current</h3>
   <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Skill</th>
-	<th>Salary</th>
+        <th class='staff-head-name'>Name</th>
+        <th class='staff-head-job'>Job</th>
+        <th class='staff-head-skill'>Skill</th>
+	<th class='staff-head-salary'>Salary</th>
 	<th>&nbsp;</th>
       </tr>
     </thead>
@@ -340,20 +356,135 @@
   </div>
   <div class="row">
     <center><img src="img/test/construction.gif"></center>
-    <div class="span4">
-      <h3>Example body text</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+    <div class="span12">
+      <p>Thank you for installing <b>TV Tycoon `95</b>! TV Tycoon has changed TV Studio management forever by introducing powerful computers to take over otherwise mundane processes. <i>Just CLICK IT and it's on the air</i>!
+      </p>
+      <p>Your software license has enabled <i>Public Access</i> channel functionality, allowing for Informercial and Televangelism programming, but as your channel begins to <i>rake in profits</i>, you'll experience an expanded selection of shows to choose from.
+      </p>
+      <p>Let's walk through some of the sections of your new <b>TV Tycoon `95</b> installation!
+      </p>
     </div>
-    <div class="span4">
-      <h3>Example body text</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+  </div>
+  <div class="row">
+    <div class="span12">
+    <h2>Broadcast</h2>
+    <p>The <b>Broadcast</b> section is a live monitor of your TV Station. From here you can:
+    </p>
+    <ul>
+	    <li> Change your station name - Just click the current name to rename it.
+	    </li>
+	    <li> Reset game - Click this button to erase your current channel's progress and start a new channel. This does not erase any awards you have unlocked.
+	    </li>
+	    <li> Enable subliminal messaging - Click on the picture of the television set to send subliminal messages and lock in viewers. Do this as much or as little as you'd like; the only limit is your imagination!
+	    </li>
+	    <li> Monitor your channel stats, like current network, ranking, viewers, and cash on hand.
+	    </li>
+	    <li> Watch your currently airing programs on the monitor.
+	    </li>
+	    <li> Speed controls - Thanks to the included <i>Ming Mecca TimeWarp Blast Processor</i>, <b>TV Tycoon `95</b> can control time itself! Pause or slow it down to make scheduling changes easier, or speed things up to accumulate viewers and cash more quickly.
+	    </li>
+    </ul>
     </div>
-    <div class="span4">
-      <h3>Example body text</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+  </div>
+  <div class="row">
+    <div class="span12">
+	    <h2>Budget</h2>
+	    <p>A quick overview of your channel's weekly budget. Try to keep yourself in the black as much as possible!
+	    </p>
+	    <ul>
+		    <li> Viewership: This is the number of viewers your channel adds each week. Keep this positive or you'll be losing viewers: never a good thing!
+		    </li>
+		    <li> Gross Revenue: Represents the total income from all your shows.
+		    </li>
+		    <li> Show Costs: The production cost for your shows. Some shows are more expensive than others, so try to run the cheaper shows until your channel has the viewership to make them worthwhile.
+		    </li>
+		    <li> Staff Costs: The salaries of your employees, paid weekly.
+		    </li>
+		    <li> Total Net Income: Revenue minus show &amp; staff costs, this is the total cash flow you can expect per week. If you let this go negative, your show could go into debt, which will reduce your show and hiring choices.
+		    </li>
+	    </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+	    <h2>Schedule</h2>
+	    <p>The schedule is the heart of your TV channel! You can send all the subliminal messages you want, but there's no point in running a TV station if you don't put some shows on the air! Here you'll find a set of buttons, broken out by Day Part and Day. Each of these, and the combinations together, are better suited for certain types of shows:
+	    </p>
+	    <h3>Day Parts</h3>
+	    <ul>
+		    <li> Morning: High viewership, low cash
+		    </li>
+		    <li> Afternoon: Medium viewership and cash
+		    </li>
+		    <li> Evening: Very high viewership and cash
+		    </li>
+		    <li> Late Night: Low viewership, medium cash
+		    </li>
+	    </ul>
+	    <h3>Days</h3>
+	    <ul>
+		    <li> Monday-Thursday: Normal ratings
+		    </li>
+		    <li> Friday-Sunday: Double viewership and cash
+		    </li>
+	    </ul>
+	    <h3>Shows</h3>
+	    <p><i>You must meet minimum cash reserve limits for shows to be available on your schedule</i>
+	    </p>
+	    <ul>
+		    <li> Static: Free, but no ratings
+		    </li>
+		    <li> Infomercials: Free, and generates some cash, but negative viewership (nobody wants to watch these)
+		    </li>
+		    <li> Televangelism: Cheap, generates some viewers, but no cash
+		    </li>
+		    <li> Game Shows: Low Cost, with high cash returns, but low viewership
+		    </li>
+		    <li> Cartoons: Low cost and low cash returns, but high viewership
+		    </li>
+		    <li> Sitcoms: Medium cost, cash, and viewership
+		    </li>
+		    <li> Drama: Very high cost, but high cash and viewership
+		    </li>
+	    </ul>
+	    <p>The numbers beneath each show on the schedule represent the Cash income (green), show cost (red), and viewership (grey).
+	    </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+	    <h2>Staff</h2>
+	    <p>On the right is a list of up to three available staff for hire. You'll see their job, skill level, and salary next to their name. If you have enough cash on hand to cover their salary, a Hire button will also be available. Each day, a new employee becomes available, and the last drops off the list if there were already three.
+	    </p><p>On the left is a list of your current staff. You can click the column headers to sort, or fire under-performers at any time.
+	    </p><p>With each additional employee working the same job you hire, the efficiency of all employees in that job is reduced, so be careful of dead weight dragging down your top performers, and try to diversify your hires into different job positions. The possible jobs are as follows:
+	    </p>
+	    <ul>
+		    <li> Actor: Low pay, increases viewership slightly
+		    </li>
+		    <li> Writer: Low pay, increases cash slightly
+		    </li>
+		    <li> Cameraman: Moderate pay, increases viewership
+		    </li>
+		    <li> Sales: Moderate pay, increases cash
+		    </li>
+		    <li> Manager: Moderate pay, increases cash and viewership slightly
+		    </li>
+		    <li> Editor: High pay, increases cash and viewership
+		    </li>
+		    <li> Director: High pay, increases viewership significantly
+		    </li>
+		    <li> Producer: High pay, increases cash significantly
+		    </li>
+		    <li> Executive: Very high pay, increases cash and viewership greatly
+		    </li>
+	    </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+	    <h2>Awards</h2>
+	    <p>A list of available Television awards. Awards you've received are shown in green.
+	    </p>
     </div>
   </div>
 </section>
@@ -364,7 +495,7 @@
       ================================================== -->
       <footer class="footer">
         <p class="pull-left" style="margin-top: -14px"><img src="img/test/geocities.jpg"></p>
-        <p class="pull-right" style="margin-top: -14px"><img src="img/test/hacker.gif">&nbsp; Built with <a href="http://bootswatch.com">Bootswatch</a></p>
+        <p class="pull-right" style="margin-top: -14px"><img src="img/test/hacker.gif">&nbsp; Built with <a href="https://github.com/divshot/geo-bootstrap">Geo Bootstrap</a></p>
       </footer>
  <center><img src="img/test/counter2.gif"></center>
     </div><!-- /container -->
